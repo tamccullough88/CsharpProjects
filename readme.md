@@ -1,0 +1,1 @@
+Project that is used while learning C# through Microsoft Learn. Almost all tasks from part 3 on are in the commit history.
