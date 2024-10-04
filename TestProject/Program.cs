@@ -1,10 +1,17 @@
-﻿string name = "steve";
+﻿int[] numbers = { 4, 8, 15, 16, 23, 42 };
 
-if (name == "bob")
-    Console.WriteLine("Found Bob");
+bool found = false;
+int total = 0;
 
-else if (name == "steve")
-    Console.WriteLine("Found Steve");
+foreach (int number in numbers)
+{
+    total += number;
+    if (number == 42)
+        found = true;
 
-else
-    Console.WriteLine("Found Chuck");
+}
+
+if (found)
+    Console.WriteLine("Set contains 42");
+
+Console.WriteLine($"Total: {total}");
