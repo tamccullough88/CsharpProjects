@@ -1,19 +1,30 @@
-﻿for (int i = 1; i < 101; i++)
+﻿int hero = 10;
+int monster = 10;
+
+Random dice = new Random();
+
+
+do
 {
-    if ((i % 3 == 0) && (i % 5 == 0))
-    {
-        Console.WriteLine($"{i} - FizzBuzz");
-    }
-    else if (i % 3 == 0)
-    {
-        Console.WriteLine($"{i} - Fizz");
-    }
-    else if (i % 5 == 0)
-    {
-        Console.WriteLine($"{i} - Buzz");
-    }
-    else
-    {
-        Console.WriteLine($"{i}");
-    }
-}
+    int roll = dice.Next(1, 11);
+    monster -= roll;
+    Console.WriteLine($"Monster was damaged and lost {roll} health and now has {monster} health.");
+
+    if (monster <= 0) continue;
+
+    roll = dice.Next(1, 11);
+    hero -= roll;
+    Console.WriteLine($"Hero was damaged and lost {roll} health and now has {hero} health.");
+
+
+} while (hero > 0 && monster > 0);
+
+Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins!");
+
+// while (current >= 3)
+// {
+//     Console.WriteLine(current);
+//     current = random.Next(1, 11);
+// }
+
+// Console.WriteLine($"Last Number: {current}");
