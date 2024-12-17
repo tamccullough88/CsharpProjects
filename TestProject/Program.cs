@@ -1,30 +1,30 @@
-﻿int hero = 10;
-int monster = 10;
-
-Random dice = new Random();
-
-
+﻿using System.Runtime.CompilerServices;
+string? readResult;
+int numericValue = 0;
+bool validNumber = false;
+Console.WriteLine("Enter a number between 5 and 10:");
 do
 {
-    int roll = dice.Next(1, 11);
-    monster -= roll;
-    Console.WriteLine($"Monster was damaged and lost {roll} health and now has {monster} health.");
+    readResult = Console.ReadLine();
+    validNumber = int.TryParse(readResult, out numericValue);
+    if (readResult != null)
+    {
+        if (validNumber == true)
+        {
+            if (numericValue <= 5 || numericValue >= 10)
+            {
+                validNumber = false;
+                Console.WriteLine($"You entered {numericValue}, Please enter a valid number");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Sorry, you entered an invalid number, please try again");
+        }
+    }
 
-    if (monster <= 0) continue;
+} while (validNumber == false);
 
-    roll = dice.Next(1, 11);
-    hero -= roll;
-    Console.WriteLine($"Hero was damaged and lost {roll} health and now has {hero} health.");
+Console.WriteLine($"Your input value ({numericValue}) has been accepted.");
 
-
-} while (hero > 0 && monster > 0);
-
-Console.WriteLine(hero > monster ? "Hero wins!" : "Monster wins!");
-
-// while (current >= 3)
-// {
-//     Console.WriteLine(current);
-//     current = random.Next(1, 11);
-// }
-
-// Console.WriteLine($"Last Number: {current}");
+readResult = Console.ReadLine();
