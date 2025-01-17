@@ -319,6 +319,7 @@ do
             break;
 
         case "4":
+            // notice pattern between 3 & 4.
             //Ensure animal nicknames and personality descriptions are complete
             for (int i = 0; i < maxPets; i++)
             {
