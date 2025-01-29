@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\freef\\Documents\\code\\CsharpProjects\\TestProject\\TestProject.csproj": {}
+    "C:\\Users\\Thomas\\OneDrive\\Documents\\Code\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\freef\\Documents\\code\\CsharpProjects\\TestProject\\TestProject.csproj": {
+    "C:\\Users\\Thomas\\OneDrive\\Documents\\Code\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\freef\\Documents\\code\\CsharpProjects\\TestProject\\TestProject.csproj",
+        "projectUniqueName": "C:\\Users\\Thomas\\OneDrive\\Documents\\Code\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj",
         "projectName": "TestProject",
-        "projectPath": "C:\\Users\\freef\\Documents\\code\\CsharpProjects\\TestProject\\TestProject.csproj",
-        "packagesPath": "C:\\Users\\freef\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\freef\\Documents\\code\\CsharpProjects\\TestProject\\obj\\",
+        "projectPath": "C:\\Users\\Thomas\\OneDrive\\Documents\\Code\\CSharp\\CsharpProjects\\TestProject\\TestProject.csproj",
+        "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thomas\\OneDrive\\Documents\\Code\\CSharp\\CsharpProjects\\TestProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\freef\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -37,11 +37,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "imports": [
             "net461",
             "net462",
@@ -58,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
